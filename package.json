@@ -1,0 +1,14 @@
+{
+  "name": "homepage",
+  "version": "0.0.0",
+  "description": "ccit homepage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ccit",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
