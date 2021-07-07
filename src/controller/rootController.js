@@ -5,7 +5,7 @@ export const getJoin = (req, res) => {
     res.render("join", { pageTitle: "회원가입" });
 };
 
-export const postJoin = (req, res) => {
+export const postJoin = async(req, res) => {
     const { email, username, password, checkPassword } = req.body;
     const pageTitle = "회원가입";
     if(password !== checkPassword) {
@@ -41,7 +41,7 @@ export const getLogin = (req, res) => {
     res.render("login", { pageTitle: "로그인" });
 };
 
-export const postLogin = (req, res) => {
+export const postLogin = async(req, res) => {
     const { email, password } = req.body;
     const pageTitle = "로그인";
     const user = await User.findOne({ email });
